@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+p,
+a,
+li {
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  color: aliceblue;
+}
+p {
+  color: aliceblue;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*topo css*/
+.topo-bg {
+  background-color: rgb(0, 0, 0);
+}
+.topo-container {
+  display: flex;
+  padding: 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+.topo-container a {
+  color: aliceblue;
+}
+.topo-container p {
+  color: crimson;
+}
+
+/*header css*/
+
+.header-bg {
+  background-color: rgb(0, 0, 0);
+}
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+}
+.header-item ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.header-nav li {
+  padding: 5px;
+}
+.header-nav a {
+  color: aliceblue;
+  font-size: 18px;
+}
+.logo {
+  font-size: 20px;
+  font-style: oblique;
+  color: aliceblue;
+}
+
+.logo h2:hover {
+  font-size: 35px;
+}
+
+.header-nav li:hover {
+  font-size: 19px;
+}
+.header-nav a:hover {
+  color: crimson;
+}
+
+/* section - apresentaçao e minha foto*/
+
+.section-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.minha-foto img {
+  max-width: 400px;
+  border-radius: 20px;
+ border: solid 2px rgb(255, 0, 0);
+
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 40px;
+}
+.apresentacao p {
+  font-size: 25px;
+  max-width: 860px;
+  text-align: right;
+}
+.apresentacao h2 {
+  color: aliceblue;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  max-width: 550px;
+  text-align: end;
+}
+/*estilo-container*/
+
+.estilos-container img {
+  max-width: 350px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  border: solid 1px rgb(255, 0, 0);
+}
+.estilos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 120px 200px;
+  gap: 50px;
+}
+
+.estilos-container img:hover,
+.qualidades img:hover,
+.minha-foto img:hover {
+  box-shadow: 5px 5px  25px crimson;
+  transition: box-shadow 0.3s ease;
+}
+
+.fineline,.anime,
+.blackwork,
+.outros {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.fineline p,
+.anime p,
+.blackwork p,
+.outros p {
+  font-size: 25px;
+}
+.fineline h2,
+.blackwork h2,
+.outros h2,
+.anime h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.anime,
+.outros {
+  text-align: end;
+}
+.estilos-title {
+  color: aliceblue;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 100px;
+}
+
+/* qualidades */
+
+.qualidades img {
+  max-width: 350px;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  border: solid 1px rgb(255, 0, 0);
+}
+
+.qualidades {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 200px 200px;
+  gap: 50px;
+}
+.qualidades p {
+  max-width: 350px;
+  text-align: center;
+  font-size: 20px;
+  flex-wrap: wrap;
+}
+.qualidades h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+/*diferencial */
+
+.diferencial-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+}
+.diferencial-texto p {
+  font-size: 25px;
+  max-width: 400px;
+  text-align: center;
+  margin: 20px;
+}
+.diferencial-texto h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.diferencial-container video {
+  border-radius: 20px;
+  border: solid 1px crimson;
+}
+
+/*footer*/
+
+.footer-bg {
+  background-color: #111;
+  color: aliceblue;
+  padding: 5rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bi {
+  font-size: 2rem;
+}
+
+.contatos h2 {
+  color: aliceblue;
+  margin-bottom: 40px;
+}
+.fim p {
+  padding:20px ;
+  font-size: 1rem;
+  text-align: center;
+}
+/*lllll*/
