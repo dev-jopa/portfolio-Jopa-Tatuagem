@@ -87,7 +87,7 @@ body {
 #estilos h1 {
   text-align: center;
   font-size: 3.5rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
 }
 
 .fineline p,
@@ -107,7 +107,7 @@ body {
   justify-content: center;
   text-align: end;
   gap: 2.5rem;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 
 .fineline h2,
@@ -117,6 +117,50 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
+
+/*diferecial*/
+
+.diferencial-container img {
+  max-width: 300px;
+  max-height: 0 auto;
+  border-radius: 3rem;
+}
+.diferencial-container p {
+  max-width: 800px;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dif-img-1 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.dif-img-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.dif-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dif-txt h2 {
+  font-size: 2.5rem;
+}
+
+/* media Q*/
 
 @media (max-width: 768px) {
   .nav-container {
@@ -141,7 +185,7 @@ body {
   #foto-artista {
     max-width: 90%;
   }
-  
+
   #texto-apresentacao {
     text-align: center;
     max-width: 90%;
@@ -149,10 +193,10 @@ body {
 
   #estilos h1 {
     margin-top: 70px;
-    margin-bottom: 70px;
   }
+
   #estilos {
-    margin: 20px 10px;
+    margin: 10px 5px;
   }
 
   .fineline,
@@ -176,5 +220,15 @@ body {
   .anime h2,
   .versatilidade h2 {
     text-align: center;
+  }
+  .dif-img-1,
+  .dif-img-2 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.6rem;
+  }
+
+  .dif-txt {
+    margin: 0 1.5rem;
   }
 }
