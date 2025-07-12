@@ -1,262 +1,180 @@
 * {
-  box-sizing: border-box;
-}
-body,
-h1,
-h2,
-p,
-a,
-li {
   margin: 0px;
-  text-decoration: none;
-  list-style: none;
-  padding: 0px;
-  font-family: Arial, Helvetica, sans-serif;
 }
-h2 {
-  color: aliceblue;
-}
-p {
-  color: aliceblue;
-}
-
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: darkgray;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-/*topo css*/
-.topo-bg {
-  background-color: rgb(0, 0, 0);
-}
-.topo-container {
-  display: flex;
-  padding: 15px;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 20px;
-}
-.topo-container a {
+.secao-inicial {
+  background-image: url("tattoos/Design.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: aliceblue;
-}
-.topo-container p {
-  color: crimson;
-}
-
-/*header css*/
-
-.header-bg {
-  background-color: rgb(0, 0, 0);
-}
-.header-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
-}
-.header-item ul {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.header-nav li {
-  padding: 5px;
-}
-.header-nav a {
-  color: aliceblue;
-  font-size: 18px;
-}
-.logo {
-  font-size: 20px;
-  font-style: oblique;
-  color: aliceblue;
-}
-
-.logo h2:hover {
-  font-size: 35px;
-}
-
-.header-nav li:hover {
-  font-size: 19px;
-}
-.header-nav a:hover {
-  color: crimson;
-}
-
-/* section - apresentaçao e minha foto*/
-
-.section-container {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.minha-foto img {
-  max-width: 400px;
-  border-radius: 20px;
- border: solid 2px rgb(255, 0, 0);
-
-}
-
-.apresentacao {
+  text-align: center;
+  min-height: 100vh; /*min-height quer dizer q no minimo ela vai ocupar a tela interia*/
   display: flex;
   flex-direction: column;
-  align-items: end;
-  margin-bottom: 40px;
+  justify-content: center;
 }
-.apresentacao p {
-  font-size: 25px;
-  max-width: 860px;
-  text-align: right;
+
+.secao-inicial h1 {
+  font-size: 4rem;
 }
-.apresentacao h2 {
+.secao-inicial p {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+#botao-agendar {
+  margin-top: 1rem;
+  background-color: darkred;
   color: aliceblue;
-  margin-bottom: 60px;
-  font-size: 2rem;
-  max-width: 550px;
-  text-align: end;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-/*estilo-container*/
 
-.estilos-container img {
-  max-width: 350px;
-  flex-wrap: wrap;
-  border-radius: 20px;
-  border: solid 1px rgb(255, 0, 0);
-}
-.estilos-container {
+.nav-container {
   display: flex;
+  flex-direction: row;
+  z-index: 10; /*usei pra por a nav acima da imagem de bg*/
+  position: absolute; /*usei pra por a nav acima da imagem de bg*/
+  margin-top: 2rem;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 120px 200px;
-  gap: 50px;
 }
 
-.estilos-container img:hover,
-.qualidades img:hover,
-.minha-foto img:hover {
-  box-shadow: 5px 5px  25px crimson;
-  transition: box-shadow 0.3s ease;
+#posicao-nav {
+  display: flex;
+  justify-content: center; /*use pra por a nav no centro*/
 }
 
-.fineline,.anime,
-.blackwork,
-.outros {
+.nav-container a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: aliceblue;
+}
+
+/*apresentaçao*/
+
+#foto-artista img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 3rem;
+}
+#texto-apresentacao {
+  max-width: 550px;
+  font-size: 1.6rem;
+}
+#texto-apresentacao h2 {
+  margin-bottom: 2rem;
+}
+.apresentacao-container {
   display: flex;
   align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+/*Estilos*/
+
+#estilos img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 3rem;
+}
+#estilos h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 8rem;
 }
 
 .fineline p,
-.anime p,
 .blackwork p,
-.outros p {
-  font-size: 25px;
+.anime p,
+.versatilidade p {
+  max-width: 550px;
+  font-size: 1.6rem;
 }
+
+.fineline,
+.blackwork,
+.anime,
+.versatilidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: end;
+  gap: 2.5rem;
+  margin-top: 7rem;
+}
+
 .fineline h2,
 .blackwork h2,
-.outros h2,
-.anime h2 {
-  font-size: 40px;
-  margin-bottom: 30px;
-}
-.anime,
-.outros {
-  text-align: end;
-}
-.estilos-title {
-  color: aliceblue;
-  text-align: center;
-  font-size: 4rem;
-  margin-top: 100px;
+.anime h2,
+.versatilidade h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-/* qualidades */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 
-.qualidades img {
-  max-width: 350px;
-  flex-wrap: wrap;
-  border-radius: 20px;
-  border: solid 1px rgb(255, 0, 0);
-}
+  .secao-inicial p,
+  h1,
+  a {
+    margin: 30px 20px;
+    gap: 40px;
+  }
 
-.qualidades {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 200px 200px;
-  gap: 50px;
-}
-.qualidades p {
-  max-width: 350px;
-  text-align: center;
-  font-size: 20px;
-  flex-wrap: wrap;
-}
-.qualidades h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 40px;
-  margin-top: 20px;
-}
+  .apresentacao-container {
+    flex-direction: column;
+  }
+  #foto-artista {
+    max-width: 90%;
+  }
+  
+  #texto-apresentacao {
+    text-align: center;
+    max-width: 90%;
+  }
 
-/*diferencial */
+  #estilos h1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  #estilos {
+    margin: 20px 10px;
+  }
 
-.diferencial-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 10rem;
-}
-.diferencial-texto p {
-  font-size: 25px;
-  max-width: 400px;
-  text-align: center;
-  margin: 20px;
-}
-.diferencial-texto h2 {
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-.diferencial-container video {
-  border-radius: 20px;
-  border: solid 1px crimson;
-}
+  .fineline,
+  .blackwork,
+  .anime,
+  .versatilidade {
+    flex-direction: column;
+    margin: 70px 20px;
+  }
 
-/*footer*/
+  .fineline p,
+  .blackwork p,
+  .anime p,
+  .versatilidade p {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 
-.footer-bg {
-  background-color: #111;
-  color: aliceblue;
-  padding: 5rem;
+  .fineline h2,
+  .blackwork h2,
+  .anime h2,
+  .versatilidade h2 {
+    text-align: center;
+  }
 }
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.bi {
-  font-size: 2rem;
-}
-
-.contatos h2 {
-  color: aliceblue;
-  margin-bottom: 40px;
-}
-.fim p {
-  padding:20px ;
-  font-size: 1rem;
-  text-align: center;
-}
-/*lllll*/
